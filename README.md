@@ -5,7 +5,7 @@
 
 
 <p align="center">
-<img src="https://j.gifs.com/0Yg7l3.gif" width = "600" />
+<img src="mygif.gif" width = "600" />
 </p>
 
 
