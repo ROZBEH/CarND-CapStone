@@ -43,15 +43,13 @@ II. The main source codes are inside```CarND-CapStone/ros/src/``` folder. Most o
 
 III. Here I try to talk about some of the codes and explain their purpose.
 
-- ```CarND-CapStone/ros/src/waypoint_updater/waypoint_updater.py```
+- ```CarND-CapStone/ros/src/waypoint_updater/waypoint_updater.py``` 
 
 - ```CarND-CapStone/ros/src/twist_controller/twist_controller.py```
 
 - ```CarND-CapStone/ros/src/tl_detector/tl_detector.py```
 
-- ```CarND-CapStone/train.py``` was used in order to train the traffic light classifier. This code is provide by tensorflow objection detection <a href="https://github.com/tensorflow/models/tree/master/research/object_detection">API</a>.
-
-- ```CarND-CapStone/ros/src/tl_detector/light_classification/tl_classifier.py```
+- ```CarND-CapStone/train.py``` was used in order to train the traffic light classifier. This code is provide by tensorflow objection detection <a href="https://github.com/tensorflow/models/tree/master/research/object_detection">API</a>. I used the data from <a href="https://github.com/alex-lechner/Traffic-Light-Classification">here</a>, in order to train the traffic light classifier. I used Amazon AWS in order to train the model. The output model was saved as ```frozen_inference_graph.pb``` in order to be used in the ```tl_classifier.py``` for the prediction purpose.
 
 
 IV. Make sure include the ```dbw_mkz_msgs``` folder inside ```src``` folder when you are running the code. It is provided by Udacity as part of the project.
