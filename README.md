@@ -30,7 +30,13 @@ I. Base of the source code that I've used for this project is inspired by the wa
 </br>
 
 
-II. The main source codes are inside```CarND-CapStone/ros/src/``` folder. Most of the blocks and parts have been provided by Udacity and we just had to fill up specific functionalities and make sure that the car can go around route and stop at the traffic signals. The codes that has been modified and added in this project incude: ```CarND-CapStone/ros/src/waypoint_updater/waypoint_updater.py```, ```CarND-CapStone/ros/src/twist_controller/twist_controller.py```, ```CarND-CapStone/ros/src/```, ```CarND-CapStone/ros/src/tl_detector/tl_detector.py```, ```CarND-CapStone/ros/src/tl_detector/light_classification/tl_classifier.py```, 
+II. The main source codes are inside```CarND-CapStone/ros/src/``` folder. Most of the blocks and parts have been provided by Udacity and we just had to fill up specific functionalities and make sure that the car can go around route and stop at the traffic signals. The codes that has been modified and added in this project incude: 
+- ```CarND-CapStone/ros/src/waypoint_updater/waypoint_updater.py```
+- ```CarND-CapStone/ros/src/twist_controller/twist_controller.py```
+- ```CarND-CapStone/ros/src/```
+- ```CarND-CapStone/ros/src/tl_detector/tl_detector.py```
+- ```CarND-CapStone/ros/src/tl_detector/light_classification/tl_classifier.py```
+- ```CarND-CapStone/train.py```
 
 
 include other codes according to the walk through
