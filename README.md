@@ -49,7 +49,7 @@ III. Here I try to talk about some of the codes and explain their purpose.
 
 - ```CarND-CapStone/ros/src/tl_detector/tl_detector.py```
 
-- ```CarND-CapStone/train.py```
+- ```CarND-CapStone/train.py``` was used in order to train the traffic light classifier. This code is provide by tensorflow objection detection <a href="https://github.com/tensorflow/models/tree/master/research/object_detection">API</a>.
 
 - ```CarND-CapStone/ros/src/tl_detector/light_classification/tl_classifier.py```
 
