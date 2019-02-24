@@ -30,7 +30,14 @@ I. Base of the source code that I've used for this project is inspired by the wa
 </br>
 
 
-II. The main source codes are inside```/ros/src/``` folder. Most of the blocks and parts have been provided by Udacity and we just had to fill up specific functionalities and make sure that the car can go around route and stop at the traffic signals. The codes that has been modified and added in this project incude: ```/ros/src/```, ```/ros/src/```, ```/ros/src/```, ```/ros/src/```
+II. The main source codes are inside```CarND-CapStone/ros/src/``` folder. Most of the blocks and parts have been provided by Udacity and we just had to fill up specific functionalities and make sure that the car can go around route and stop at the traffic signals. The codes that has been modified and added in this project incude: ```CarND-CapStone/ros/src/waypoint_updater/waypoint_updater.py```, ```CarND-CapStone/ros/src/twist_controller/twist_controller.py```, ```CarND-CapStone/ros/src/```, ```CarND-CapStone/ros/src/tl_detector/tl_detector.py```, ```CarND-CapStone/ros/src/tl_detector/light_classification/tl_classifier.py```, 
+
+
+include other codes according to the walk through
+add train.py
+talk about where is tensorflow model
+talk about setting up the right directory inside the tl_classifier
+Consider the notes on the A4 paper
 
 
 </br>
@@ -47,6 +54,8 @@ IV. Here I try to talk about some of the important variables that were used in t
 - ```right_side``` and ```left_side``` are  
 
 - ```margine_left``` ```margine_center``` ```margine_right``` . 
+
+IV. Make sure include the ```dbw_mkz_msgs``` folder inside ```src``` folder when you are running the code. It is provided by Udacity as part of the project.
 
 V. Lastly, be sure for your system to have at least a 5 core cpu and a good GPU specially when you turn on the camera on the simulator. The car runs smoothly around the block in autonomous mode without camera turned on. But when you turn on the camera, the car might steer off the road if you're system hardware are not strong enough.  
 
