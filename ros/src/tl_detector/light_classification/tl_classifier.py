@@ -3,6 +3,8 @@ import tensorflow as tf
 import numpy as np
 import datetime
 import os
+# Credit for the codes of this section to the following github repository
+# https://github.com/alex-lechner/Traffic-Light-Classification
 
 class TLClassifier(object):
     def __init__(self, is_sim):
@@ -10,8 +12,6 @@ class TLClassifier(object):
         if is_sim:
             PATH_TO_GRAPH = os.getcwd()
             PATH_TO_GRAPH += '/light_classification/frozen_inference_graph.pb'
-        else:
-            PATH_TO_GRAPH = r'frozen_inference_graph.pb'
 
         self.graph = tf.Graph()
         self.threshold = .5
