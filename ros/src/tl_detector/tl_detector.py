@@ -27,7 +27,7 @@ class TLDetector(object):
 
         sub1 = rospy.Subscriber('/current_pose', PoseStamped, self.pose_cb)
         sub2 = rospy.Subscriber('/base_waypoints', Lane, self.waypoints_cb)
-        print("Hello I am here!-0")
+
 
         '''
         /vehicle/traffic_lights provides you with the location of the traffic light in 3D map space and
@@ -55,20 +55,20 @@ class TLDetector(object):
         
 
         rospy.spin()
+    
 
     def pose_cb(self, msg):
         self.pose = msg
-        print("Hello I am here!-2")
+
 
     def waypoints_cb(self, waypoints):
-        print("Hello I am here!-3")
+
         self.waypoints = waypoints
         if not self.waypoints_2d:
             self.waypoints_2d = [[waypoint.pose.pose.position.x, waypoint.pose.pose.position.y] for waypoint in waypoints.waypoints]
             self.waypoints_tree = KDTree(self.waypoints_2d)
 
     def traffic_cb(self, msg):
-        print("Hello I am here!-4")
         self.lights = msg.lights
 
     def image_cb(self, msg):
@@ -82,7 +82,7 @@ class TLDetector(object):
         self.has_image = True
         self.camera_image = msg
         light_wp, state = self.process_traffic_lights()
-        print("Hello I am here!-1")
+
 
         '''
         Publish upcoming red lights at camera frequency.

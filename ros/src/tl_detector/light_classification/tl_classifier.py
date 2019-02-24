@@ -2,14 +2,16 @@ from styx_msgs.msg import TrafficLight
 import tensorflow as tf
 import numpy as np
 import datetime
+import os
 
 class TLClassifier(object):
     def __init__(self, is_sim):
 
         if is_sim:
-            PATH_TO_GRAPH = r'/home/rouzbeh/carnd-term3/CarND-Capstone/frozen_inference_graph.pb'
+            PATH_TO_GRAPH = os.getcwd()
+            PATH_TO_GRAPH += '/light_classification/frozen_inference_graph.pb'
         else:
-            PATH_TO_GRAPH = r'light_classification/model/ssd_udacity/frozen_inference_graph.pb'
+            PATH_TO_GRAPH = r'frozen_inference_graph.pb'
 
         self.graph = tf.Graph()
         self.threshold = .5
