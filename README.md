@@ -33,33 +33,26 @@ I. Base of the source code that I've used for this project is inspired by the wa
 II. The main source codes are inside```CarND-CapStone/ros/src/``` folder. Most of the blocks and parts have been provided by Udacity and we just had to fill up specific functionalities and make sure that the car can go around route and stop at the traffic signals. The codes that has been modified and added in this project incude: 
 - ```CarND-CapStone/ros/src/waypoint_updater/waypoint_updater.py```
 - ```CarND-CapStone/ros/src/twist_controller/twist_controller.py```
-- ```CarND-CapStone/ros/src/```
 - ```CarND-CapStone/ros/src/tl_detector/tl_detector.py```
 - ```CarND-CapStone/ros/src/tl_detector/light_classification/tl_classifier.py```
 - ```CarND-CapStone/train.py```
 
 
-include other codes according to the walk through
-add train.py
-talk about where is tensorflow model
-talk about setting up the right directory inside the tl_classifier
-Consider the notes on the A4 paper
-
-
 </br>
 
-III. In 
 
+III. Here I try to talk about some of the codes and explain their purpose.
 
-IV. Here I try to talk about some of the important variables that were used in the code.
+- ```CarND-CapStone/ros/src/waypoint_updater/waypoint_updater.py```
 
-- ```too_close``` is a boolean variable that
+- ```CarND-CapStone/ros/src/twist_controller/twist_controller.py```
 
-- ```turn_right``` and ```turn_left``` are t
+- ```CarND-CapStone/ros/src/tl_detector/tl_detector.py```
 
-- ```right_side``` and ```left_side``` are  
+- ```CarND-CapStone/train.py```
 
-- ```margine_left``` ```margine_center``` ```margine_right``` . 
+- ```CarND-CapStone/ros/src/tl_detector/light_classification/tl_classifier.py```
+
 
 IV. Make sure include the ```dbw_mkz_msgs``` folder inside ```src``` folder when you are running the code. It is provided by Udacity as part of the project.
 
