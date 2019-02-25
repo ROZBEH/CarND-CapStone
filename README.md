@@ -13,7 +13,7 @@ Overview
 ---
 
 
-I this project vehicle drives in a simulation environment autonomously without human intervention. Plus, the vehicle has to stop on the traffic signals. The fundamental codes used in this project is based on Capstone project walkthrough at Udacity Self Driving Cars online course.
+In this project vehicle drives in a simulation environment autonomously without human intervention. Plus, the vehicle has to stop on the traffic signals. The fundamental codes used in this project is based on Capstone project walkthrough at Udacity Self Driving Cars online course.
 
 
 Pipeline
