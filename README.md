@@ -43,11 +43,11 @@ II. The main source codes are inside```CarND-CapStone/ros/src/``` folder. Most o
 
 III. Here I try to talk about some of the codes and explain their purpose.
 
-- ```CarND-CapStone/ros/src/waypoint_updater/waypoint_updater.py``` 
+- ```CarND-CapStone/ros/src/waypoint_updater/waypoint_updater.py``` the waypoint_updater subscribes to topics ```/base_waypoints``` , ```/current_pose``` and publishes a list of waypoints ```/final_waypoints```.
 
-- ```CarND-CapStone/ros/src/twist_controller/twist_controller.py```
+- ```CarND-CapStone/ros/src/twist_controller/dbw_node.py``` Drive by wire node which subscribes to ```/twist_cmd``` and uses throttle, brake, and steering commands proportionately. 
 
-- ```CarND-CapStone/ros/src/tl_detector/tl_detector.py```
+- ```CarND-CapStone/ros/src/tl_detector/tl_detector.py``` This nodes subscribes to nodes such as ```/base_waypoints```, ```current_pose```, ```/image_color```, ```/vehicle/traffic_lights``` and publishes indexes of the waypoints for nearest upcoming red light's stop line to a single topic ```/traffic_waypoint```.
 
 - ```CarND-CapStone/train.py``` was used in order to train the traffic light classifier. This code is provide by tensorflow objection detection <a href="https://github.com/tensorflow/models/tree/master/research/object_detection">API</a>. I used the data from <a href="https://github.com/alex-lechner/Traffic-Light-Classification">here</a>, in order to train the traffic light classifier. I used Amazon AWS in order to train the model. The output model was saved as ```frozen_inference_graph.pb``` in order to be used in the ```tl_classifier.py``` for the prediction purpose.
 
